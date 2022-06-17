@@ -4,7 +4,607 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- Script for FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/71f2466461.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Burger Queen</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wholeSection">
+      <!-- Navigation starts here -->
+      <nav class="navbar navbar-expand-lg bg-dark nav-footer-background">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand text-white ms-5" href="#"
+            ><img src="./images/logo for navbar.png" alt="" class="w-25"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse me-5" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">My Cart</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-sm btn-outline-success ms-lg-4"
+              type="submit"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousel starts here -->
+      <section id="carousel">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="./images/promo banner.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block text-white">
+                <h5>The Best Fastfood in Town!</h5>
+                <button class="btn btn-success" type="submit">Buy Now</button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./images/promo banner2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block text-white">
+                <h5>The Best Fastfood in Town!</h5>
+                <button class="btn btn-success" type="submit">Buy Now</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/promo banner3.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block text-white">
+                <h5>The Best Fastfood in Town!</h5>
+                <button class="btn btn-success" type="submit">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Best Sellers -->
+      <section id="bestsell" class="p-5 heightforAll">
+        <div id="bestSellers" class="">
+          <div class="row mb-5">
+            <div class="h2 fw-bold">
+              Checkout some of our best sellers!
+              <span class="badge bg-danger">Hot!</span>
+            </div>
+            <div class="h4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </div>
+          </div>
+          <div class="row d-flex justify-content-around">
+            <div class="col-lg-3">
+              <div class="card shadow-lg">
+                <img
+                  src="./images/bundle1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary d-flex justify-content-center"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card shadow-lg">
+                <img
+                  src="./images/bundle2.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary d-flex justify-content-center"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card shadow-lg">
+                <img
+                  src="./images/bundle3.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary d-flex justify-content-center"
+                    >Order Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Testimonials starts here -->
+      <section
+        id="testimonials"
+        class="m-5 d-flex align-items-center heightforAll section-background shadow-lg"
+      >
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-0 w-100">
+                <div class="col-md-7 d-flex align-self-center">
+                  <div class="card-body p-5 text-end">
+                    <h3 class="card-text">
+                      <i class="fa-solid fa-quote-left"></i> This is a wider
+                      card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.
+                      <i class="fa-solid fa-quote-right"></i>
+                    </h3>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                      <br />
+                      <img src="./images/man.png" alt="" class="" width="45" />
+                      <small class="text-muted fst-italic"
+                        >Juan Dela Cruz</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                  <img
+                    src="./images/bundle3.png"
+                    class="img-fluid border border-secondary"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-0 w-100">
+                <div class="col-md-7 d-flex align-self-center">
+                  <div class="card-body p-5 text-end">
+                    <h3 class="card-text">
+                      <i class="fa-solid fa-quote-left"></i> This is a wider
+                      card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.
+                      <i class="fa-solid fa-quote-right"></i>
+                    </h3>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <br />
+                      <img
+                        src="./images/woman.png"
+                        alt=""
+                        class=""
+                        width="45"
+                      />
+                      <small class="text-muted fst-italic"
+                        >Juana Dela Cruz</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                  <img
+                    src="./images/bundle2.png"
+                    class="img-fluid border border-secondary"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-0 w-100">
+                <div class="col-md-7 d-flex align-self-center">
+                  <div class="card-body p-5 text-end">
+                    <h3 class="card-text">
+                      <i class="fa-solid fa-quote-left"></i> This is a wider
+                      card with supporting text below as a natural lead-in to
+                      additional content. This content is a little bit longer.
+                      <i class="fa-solid fa-quote-right"></i>
+                    </h3>
+                    <p class="card-text">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <br />
+                      <img src="./images/man.png" alt="" class="" width="45" />
+                      <small class="text-muted fst-italic"
+                        >Juanito Dela Cruz</small
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                  <img
+                    src="./images/bundle1.png"
+                    class="img-fluid border border-secondary"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <!-- In Partnership with starts here -->
+      <section id="partnership" class="m-5 heightforAll">
+        <div class="row mb-5 text-center">
+          <div class="h2 fw-bold">
+            In Partnership with the most popular brands
+          </div>
+          <div class="h4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </div>
+        </div>
+        <div class="row d-flex justify-content-around">
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo Pepsi.png" alt="" class="w-50" />
+          </div>
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo 7up.png" alt="" class="w-50" />
+          </div>
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo Coke.png" alt="" class="w-50" />
+          </div>
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo Sprite.png" alt="" class="w-50" />
+          </div>
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo Mdew.png" alt="" class="w-50" />
+          </div>
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo Fanta.png" alt="" class="w-50" />
+          </div>
+        </div>
+        <div class="row d-flex justify-content-around">
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo Fanta.png" alt="" class="w-50" />
+          </div>
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo Mdew.png" alt="" class="w-50" />
+          </div>
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo 7up.png" alt="" class="w-50" />
+          </div>
+          <div
+            class="col-2 grayscaleImg text-center d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/Logo Sprite.png" alt="" class="w-50" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Google Maps starts here -->
+      <section id="location" class="m-5 heightforAll">
+        <div class="row">
+          <div class="col-lg-5">
+            <iframe
+              width="635"
+              height="330"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Taco%20de%20Kapatagan%20Kapatagan,%20Lanao%20del%20Norte&t=k&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            >
+            </iframe>
+          </div>
+          <div class="col-md-7 d-flex align-self-center">
+            <div class="card-body p-5 text-center">
+              <div class="h2 fw-bold">Our branches is located at</div>
+              <h3 class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tempora numquam non voluptatem quasi incidunt consequatur.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter starts here -->
+      <section id="newsletter" class="m-5">
+        <div class="row d-flex justify-content-center align-items-center rows">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="text-center">
+                <img src="./images/logo for navbar.png" width="100" />
+                <span class="d-block mt-3 h4"
+                  >Subscribe to our newsletter in order not to miss new arrivals
+                  <br />
+                  promotions and discounts of our store</span
+                >
+                <div class="mx-5">
+                  <div class="input-group mb-3 mt-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter email"
+                      aria-label="Recipient's username"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-success border-rad"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer starts here -->
+      <!-- Footer -->
+      <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <section class="nav-footer-background text-white">
+          <div class="container-fluid text-center text-md-start pt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <img src="./images/logo for navbar.png" width="100" class="" />
+                <p>Where your cravings of burgers and fries will be solve!</p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-end">
+                <h6 class="text-uppercase fw-bold mb-4">Menu</h6>
+                <p>
+                  <a href="#" class="text-reset">Burgers</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Fries</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Nuggets</a>
+                </p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+                <h6 class="text-uppercase fw-bold mb-4">Community</h6>
+                <p>
+                  <a href="#" class="text-reset">Featured artists</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">The Portal</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Live events</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Help</a>
+                </p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-start">
+                <h6 class="text-uppercase fw-bold mb-4">Company</h6>
+                <p>
+                  <a href="#" class="text-reset">About Us</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">Contact us</a>
+                </p>
+                <p>
+                  <a href="#" class="text-reset">History</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 align-items-center nav-footer-background text-white border-top border-2"
+        >
+          <!-- Left -->
+          <div class="text-center p-4">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="#">BurgerQueen.com</a>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div class="fonticons">
+            <span>Follow us: &nbsp;</span>
+            <a href="" class="me-4 text-reset">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fa-brands fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      </footer>
+    </div>
+    <!-- Script for Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

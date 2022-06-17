@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Didact Gothic", sans-serif;
+    /* for smooth scrolling */
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    /* shade of blue */
+    --ShadeofBlue: #2f3540;
+    /* Shade of green */
+    --ShadeofGreen: #A0A603;
+    /* shade of orange */
+    --ShadeofOrange: #F29F05;
+    /* Orange */
+    --Orange: #F28705;
+    /* shade of brown */
+    --ShadeofBrown: #A6826D;
+}
+
+.grayscaleImg img {
+    filter: grayscale(100%);
+}
+
+.grayscaleImg:hover img {
+    filter: grayscale(0%);
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+}
+
+/* .heightforAll {
+    height: 740px;
+} */
+
+.section-background {
+    background-color: var(--ShadeofOrange);
+}
+
+.nav-footer-background {
+    background-color: var(--ShadeofBlue);
+}
+
+.fonticons a {
+    text-decoration: none;
+}
+
+.wholeSection {
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.wholeSection nav, section {
+    scroll-snap-align: start;
+}
