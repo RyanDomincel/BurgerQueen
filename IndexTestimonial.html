@@ -32,7 +32,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="">
           <div id="carousel" class="carousel slide" data-bs-ride="false">
             <!-- BUTTON AREA  STARTS HERE-->
 
@@ -56,15 +56,6 @@
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
-
-              <!-- BUTTON THREE -->
-
-              <!-- <button
-                type="button"
-                data-bs-target="#carousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button> -->
             </div>
 
             <!-- TESTIMONIAL AREA STARTS HERE -->
@@ -258,23 +249,63 @@
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
-            <!-- <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Form Starts Here -->
+    <!-- MODAL Form Starts Here -->
+    <div class="container text-center mt-5">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#mymodal"
+      >
+        Contact Us
+      </button>
+      <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-innerhead">
+                <h5 class="modal-title">Contact Us</h5>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-3">
+                  <label class="form-label required">Name</label>
+                  <input type="text" class="form-control" name="" id="" />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label required">Email</label>
+                  <input type="email" class="form-control" name="" id="" />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label required">Type your message</label>
+                  <textarea
+                    class="form-control"
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Sumbit</button>
+              <button type="submit" class="btn btn-warning">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
