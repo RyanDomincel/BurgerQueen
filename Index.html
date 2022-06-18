@@ -21,7 +21,7 @@
   <body>
     <div class="wholeSection">
       <!-- Navigation starts here -->
-      <nav class="navbar navbar-expand-lg bg-dark nav-footer-background">
+      <nav class="navbar navbar-expand-lg nav-footer-background">
         <div class="container-fluid px-0">
           <a class="navbar-brand text-white ms-5" href="#"
             ><img src="./images/logo for navbar.png" alt="" class="w-25"
@@ -35,7 +35,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span><i class="fa-solid fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse me-5" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -103,9 +103,14 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block text-white">
-                <h5>The Best Fastfood in Town!</h5>
-                <button class="btn btn-success" type="submit">Buy Now</button>
+              <div
+                class="carousel-caption text-white h-100 d-flex justify-content-end align-items-center"
+              >
+                <div class="">
+                  <div class="buttonAdjuster">
+                    <button class="btn btn-lg" type="submit">Buy Now</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
@@ -114,9 +119,14 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block text-white">
-                <h5>The Best Fastfood in Town!</h5>
-                <button class="btn btn-success" type="submit">Buy Now</button>
+              <div
+                class="carousel-caption text-white h-100 d-flex justify-content-end align-items-center"
+              >
+                <div class="">
+                  <div class="buttonAdjuster">
+                    <button class="btn btn-lg" type="submit">Buy Now</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="carousel-item">
@@ -125,9 +135,14 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block text-white">
-                <h5>The Best Fastfood in Town!</h5>
-                <button class="btn btn-success" type="submit">Buy Now</button>
+              <div
+                class="carousel-caption text-white h-100 d-flex justify-content-end align-items-center"
+              >
+                <div class="">
+                  <div class="buttonAdjuster">
+                    <button class="btn btn-lg" type="submit">Buy Now</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -181,7 +196,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary d-flex justify-content-center"
+                    class="btn colorforButton d-flex justify-content-center"
                     >Order Now</a
                   >
                 </div>
@@ -202,7 +217,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary d-flex justify-content-center"
+                    class="btn colorforButton d-flex justify-content-center"
                     >Order Now</a
                   >
                 </div>
@@ -223,7 +238,7 @@
                   </p>
                   <a
                     href="#"
-                    class="btn btn-primary d-flex justify-content-center"
+                    class="btn colorforButton d-flex justify-content-center"
                     >Order Now</a
                   >
                 </div>
@@ -505,55 +520,72 @@
       </section>
 
       <!-- Footer starts here -->
-      <!-- Footer -->
       <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Links  -->
-        <section class="nav-footer-background text-white">
-          <div class="container-fluid text-center text-md-start pt-5">
+        <section class="nav-footer-background text-white" id="footer">
+          <div class="container text-center text-md-start pt-5">
             <div class="row mt-3">
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <img src="./images/logo for navbar.png" width="100" class="" />
                 <p>Where your cravings of burgers and fries will be solve!</p>
               </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"></div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-end">
+              <div class="col-md-6 col-lg-5 col-xl-6 mx-auto mb-4"></div>
+              <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 text-end">
                 <h6 class="text-uppercase fw-bold mb-4">Menu</h6>
                 <p>
-                  <a href="#" class="text-reset">Burgers</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    Nuggets
+                  </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">Fries</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    Burgers
+                  </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">Nuggets</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    Fries
+                  </a>
                 </p>
               </div>
 
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+              <div class="col-md-2 col-lg-1 col-xl-1 mx-auto mb-4 text-center">
                 <h6 class="text-uppercase fw-bold mb-4">Community</h6>
                 <p>
-                  <a href="#" class="text-reset">Featured artists</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    Live events
+                  </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">The Portal</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    The Portal
+                  </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">Live events</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    Featured Artists
+                  </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">Help</a>
+                  <a href="#" class="text-reset text-decoration-none"> Help </a>
                 </p>
               </div>
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-start">
+              <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 text-start">
                 <h6 class="text-uppercase fw-bold mb-4">Company</h6>
                 <p>
-                  <a href="#" class="text-reset">About Us</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    Contact us
+                  </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">Contact us</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    About Us
+                  </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset">History</a>
+                  <a href="#" class="text-reset text-decoration-none">
+                    History
+                  </a>
                 </p>
               </div>
             </div>

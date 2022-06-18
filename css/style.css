@@ -7,19 +7,32 @@
     /* for smooth scrolling */
     scroll-behavior: smooth;
     box-sizing: border-box;
+    color: var(--ShadeofBrown);
 }
 
 :root {
     /* shade of blue */
-    --ShadeofBlue: #2f3540;
+    --ShadeofBlue: #103958;
     /* Shade of green */
     --ShadeofGreen: #A0A603;
     /* shade of orange */
     --ShadeofOrange: #F29F05;
     /* Orange */
-    --Orange: #F28705;
+    --Red: #da0423;
     /* shade of brown */
-    --ShadeofBrown: #A6826D;
+    --ShadeofBrown: #882b28;
+}
+
+.colorforButton {
+    color: white !important;
+    background-color: var(--ShadeofOrange) !important;
+    border: 1px solid var(--ShadeofOrange) !important;
+}
+
+.colorforButton:hover {
+    background-color: transparent !important;
+    border: 1px solid var(--ShadeofOrange) !important;
+    color: var(--ShadeofBrown) !important;
 }
 
 .grayscaleImg img {
@@ -34,10 +47,6 @@
     overflow: hidden;
     background: none !important;
 }
-
-/* .heightforAll {
-    height: 740px;
-} */
 
 .section-background {
     background-color: var(--ShadeofOrange);
@@ -60,4 +69,26 @@
 
 .wholeSection nav, section {
     scroll-snap-align: start;
+}
+
+.buttonAdjuster {
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.buttonAdjuster button {
+    width: 250px;
+    color: white;
+    background-color: var(--Red);
+    border: 1px solid var(--Red);
+}
+
+.buttonAdjuster button:hover {
+    background-color: #ac1227;
+    border: 1px solid var(--Red);
+    color: white;
+}
+
+#footer a, #footer h6, div.text-center.p-4, .fonticons span, .fonticons i, #footer p {
+    color: white !important;
 }
