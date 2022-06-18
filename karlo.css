@@ -8,13 +8,9 @@
   .sm-nav {
     margin-right: -7px;
   }
+  
 }
 
-@media (min-width: 375px) {
-  .sm-width {
-    margin-left: 10px;
-  }
-}
 
 /*----------img expand style formatting--------------------*/
 .expand {
@@ -29,24 +25,6 @@
   transform: scale(1.5);
 }
 /*------------ end ----------------*/
-
-/*---------------------button select style formatting---------------*/
-
-.select {
-  cursor: pointer;
-  transition: 0.15s;
-}
-
-.select a {
- text-decoration: none;
- color: #ffffff;
-}
-
-.select:active {
-  padding-right: 50px;
-  padding-left: 50px;
-  background-color: rgb(160, 166, 3);
-}
 
 /*menu nav style formatting*/
 
