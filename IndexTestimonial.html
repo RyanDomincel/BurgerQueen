@@ -1,260 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Testi_style.css" />
-    <!-- CSS only -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/06981c323c.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>Burger Queen Testimonials</title>
+
+    <title>Testimonial Final</title>
+
+    <style>
+      h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: bolder;
+        text-align: center;
+        margin: 5%;
+        padding: 10px;
+        letter-spacing: 5px;
+        text-decoration: underline;
+
+       }
+      body {
+        background: #e5c68d;
+      }
+      .container {
+        margin: 5%;
+      }
+      .card-body {
+        background: white;
+      }
+      .card-title {
+        color: orange;
+      }
+      .card{
+        border-radius: 15px;
+        background-color:whitesmoke;
+      }
+      .card-text {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: small;
+        font-style: italic;
+        
+      }
+     
+      .modal{
+        text-align: left;
+      }
+      .btn btn-primary {
+        background-color:#f29f05 ;
+      }
+      
+      
+    </style>
   </head>
   <body>
-    <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
 
-    <!-- TESTIMONIAL PAGE STARTS HERE -->
-
-    <div class="text-center mt-5">
-      <h1 class="header-head">"What our customers says"</h1>
-    </div>
-
-    <!-- SLIDE SHOW STARTS HERE -->
-
     <div class="container">
+      <h1><i class="fa-solid fa-quote-left"></i>What <span class="text-danger"> Customer</span> Say's<i class="fa-solid fa-quote-right"></i></h1>
       <div class="row">
-        <div class="">
-          <div id="carousel" class="carousel slide" data-bs-ride="false">
-            <!-- BUTTON AREA  STARTS HERE-->
+        <div id="carousel" class="carousel slide" data-bs-ride="false">
+          <!-- BUTTON AREA  STARTS HERE-->
 
-            <!-- BUTTON ONE -->
+          <!-- BUTTON ONE -->
 
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-
-              <!-- BUTTON TWO -->
-
-              <button
-                type="button"
-                data-bs-target="#carousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-            </div>
-
-            <!-- TESTIMONIAL AREA STARTS HERE -->
-
-            <div class="carousel-inner">
-              <!-- FIRST PAGE OF CAROUSEL -->
-              <div class="carousel-item active">
-                <div class="row">
-                  <!-- ROW ONE -->
-                  <div
-                    class="col-md-4 border border-top-0 border-bottom-0 border-3 p-3"
-                  >
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img
-                          src="KFC1jpg.jpg"
-                          alt=""
-                          class="img-thumbnail d-block w-50"
-                        />
-                        <div class="img-text">
-                          <h2>--Col. Sanders--</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui nisi voluptates eius cupiditate, autem
-                            vero ducimus! Debitis, quasi ut! Debitis quae quas
-                            est nesciunt veniam possimus. Animi odit sint
-                            labore.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- ROW TWO -->
-
-                  <div
-                    class="col-md-4 border border-top-0 border-bottom-0 border-3 p-3"
-                  >
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img
-                          src="3wendy.png"
-                          alt=""
-                          class="img-thumbnail d-block mx-auto w-25"
-                        />
-                        <div class="img-text">
-                          <h2>--Wendy's--</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui nisi voluptates eius cupiditate, autem
-                            vero ducimus! Debitis, quasi ut! Debitis quae quas
-                            est nesciunt veniam possimus. Animi odit sint
-                            labore.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ROW THREE -->
-
-                  <div
-                    class="col-md-4 border border-top-0 border-bottom-0 border-3 p-3"
-                  >
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img
-                          src="JBdead1.png"
-                          alt=""
-                          class="img-thumbnail img-fluid d-block w-25"
-                        />
-                        <div class="img-text">
-                          <h2>Jollibee</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui nisi voluptates eius cupiditate, autem
-                            vero ducimus! Debitis, quasi ut! Debitis quae quas
-                            est nesciunt veniam possimus. Animi odit sint
-                            labore.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- SECOND PAGE OF CAROUSEL -->
-              <div class="carousel-item">
-                <div class="row">
-                  <!-- ROW FOUR -->
-
-                  <div
-                    class="col-md-4 border border-top-0 border-bottom-0 border-3 p-3"
-                  >
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img
-                          src="burger1.jpeg"
-                          alt=""
-                          class="img-thumbnail d-block w-50"
-                        />
-                        <div class="img-text">
-                          <h2>Customer Four</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui nisi voluptates eius cupiditate, autem
-                            vero ducimus! Debitis, quasi ut! Debitis quae quas
-                            est nesciunt veniam possimus. Animi odit sint
-                            labore.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ROW FIVE -->
-
-                  <div
-                    class="col-md-4 border border-top-0 border-bottom-0 border-3 p-3"
-                  >
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img
-                          src="burger duo.webp"
-                          alt=""
-                          class="img-thumbnail d-block w-50"
-                        />
-                        <div class="img-text">
-                          <h2>Customer Five</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui nisi voluptates eius cupiditate, autem
-                            vero ducimus! Debitis, quasi ut! Debitis quae quas
-                            est nesciunt veniam possimus. Animi odit sint
-                            labore.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ROW SIX -->
-
-                  <div
-                    class="col-md-4 border border-top-0 border-bottom-0 border-3 p-3"
-                  >
-                    <div class="single-box">
-                      <div class="img-area">
-                        <img
-                          src="burger2.jpeg"
-                          alt=""
-                          class="img-thumbnail d-block w-50"
-                        />
-                        <div class="img-text">
-                          <h2>Customer Six</h2>
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Qui nisi voluptates eius cupiditate, autem
-                            vero ducimus! Debitis, quasi ut! Debitis quae quas
-                            est nesciunt veniam possimus. Animi odit sint
-                            labore.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          <div class="carousel-indicators">
             <button
-              class="carousel-control-prev"
               type="button"
               data-bs-target="#carousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+
+            <!-- BUTTON TWO -->
+
             <button
-              class="carousel-control-next"
               type="button"
               data-bs-target="#carousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+             <!-- BUTTON THREE -->
+
+             <button
+             type="button"
+             data-bs-target="#carousel"
+             data-bs-slide-to="2"
+             aria-label="Slide 3"
+           ></button>
           </div>
+
+
+          <!-- TESTIMONIAL AREA STARTS HERE -->
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-evenly">
+             
+                <!-- CARD SAYING -->
+                
+                <div class="card mb-3" style="max-width: 300px">
+                  <div class="row">
+                    <div class="col-md-4 mt-5 mx-auto">
+                      <img
+                        src="BQ1_logo.png"
+                        class="img-fluid d-block"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Burger Queen</h5>
+                        <p class="card-text-saying">
+                          The
+                          <span class="text-info"> <b> Journey</b></span> of a thousand pounds <span class="text-info"><b> begins</b></span> with a <span class="text-danger"> single</span> Burger Queen
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated  10k burgers ago</small
+                          >
+                        </p>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <!-- FIRST PAGE OF CAROUSEL -->
+            <div class="carousel-item">
+              <div class="row justify-content-evenly">
+             
+                <!-- ROW ONE -->
+                <div class="card mb-3" style="max-width: 300px">
+                  <div class="row">
+                    <div class="col-md-4 mt-5">
+                      <img
+                        src="KFC1jpg.jpg"
+                        class="img-fluid d-block"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Col. Sanders,</h5>
+                        <p class="card-text">
+                          I was indeed
+                          <span class="text-danger"> <b> BLINDED</b></span> by
+                          the crispiness of their fries when I accidently poked
+                          my eye. Just be careful next time. :)
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated 1 fries ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ROW TWO -->
+                <div class="card mb-3" style="max-width: 300px">
+                  <div class="row flex-row-reverse">
+                    <div class="col-md-4 my-auto">
+                      <img
+                        src="3wendy.png"
+                        class="img-fluid d-block"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Wendy's,</h5>
+                        <p class="card-text">
+                          This has to be the best
+                          <span class="text-info"><b> BURGER</b></span> I've
+                          tasted for years. Pleasure on the lips, Lifetime on
+                          the hips.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated 3 burger month ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SECOND PAGE OF CAROUSEL -->
+            <div class="carousel-item">
+              <div class="row justify-content-evenly">
+                <!-- ROW THREE -->
+                <div class="card mb-3" style="max-width: 300px">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">McDonalds,</h5>
+                        <p class="card-text">
+                          Burger King is better than Mcdonalds
+                          but his wife's burger
+                          <span class="text-danger"
+                            ><b> (Burger Queen)</b></span
+                          >
+                          is an ass whopping 100% meaty!
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated 1 cheese burger ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 my-auto">
+                      <img
+                        src="2mc.jpeg"
+                        class="img-thumbnail d-block"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- ROW FOUR -->
+                <div class="card mb-3" style="max-width: 300px">
+                  <div class="row flex-row-reverse">
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Jollibee,</h5>
+                        <p class="card-text">
+                          After hearing BQ
+                          <p>
+                          Jollibee </p>
+                          -Zombie Mode-
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated 1 sad life ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4 my-auto">
+                      <img
+                        src="JBdead1.png"
+                        class="img-thumbnail d-block"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
         </div>
       </div>
     </div>
 
-    <!-- MODAL Form Starts Here -->
+    <!-- MODAL STARTS HERE -->
     <div class="container text-center mt-5">
       <button
         type="button"
@@ -262,7 +309,7 @@
         data-bs-toggle="modal"
         data-bs-target="#mymodal"
       >
-        Contact Us
+      <i class="fa-solid fa-address-book"></i>Contact Us<i class="fa-solid fa-address-book"></i>
       </button>
       <div class="modal" id="mymodal">
         <div class="modal-dialog">
