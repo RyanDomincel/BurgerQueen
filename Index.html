@@ -22,7 +22,7 @@
     <div class="wholeSection">
       <!-- Navigation starts here -->
       <nav class="navbar navbar-expand-lg nav-footer-background">
-        <div class="container-fluid px-0">
+        <div class="container-fluid px-lg-0 pe-5">
           <a class="navbar-brand text-white ms-5" href="#"
             ><img src="./images/logo for navbar.png" alt="" class="w-25"
           /></a>
@@ -38,31 +38,22 @@
             <span><i class="fa-solid fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse me-5" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-lg-auto ms-md-auto ms-5 mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="#"
+                <a class="nav-link active" aria-current="page" href="Index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Menu</a>
+                <a class="nav-link text-white" href="menu.html">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white">My Cart</a>
+                <a class="nav-link text-white" href="order.html">My Cart</a>
               </li>
             </ul>
-            <button
-              class="btn btn-sm btn-outline-success ms-lg-4"
-              type="submit"
-            >
-              Register
-            </button>
           </div>
         </div>
       </nav>
@@ -108,7 +99,9 @@
               >
                 <div class="">
                   <div class="buttonAdjuster">
-                    <button class="btn btn-lg" type="submit">Buy Now</button>
+                    <a href="menu.html">
+                      <button class="btn btn-lg" type="submit">Buy Now</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -124,7 +117,9 @@
               >
                 <div class="">
                   <div class="buttonAdjuster">
-                    <button class="btn btn-lg" type="submit">Buy Now</button>
+                    <a href="menu.html">
+                      <button class="btn btn-lg" type="submit">Buy Now</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -140,7 +135,9 @@
               >
                 <div class="">
                   <div class="buttonAdjuster">
-                    <button class="btn btn-lg" type="submit">Buy Now</button>
+                    <a href="menu.html">
+                      <button class="btn btn-lg" type="submit">Buy Now</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -170,7 +167,7 @@
       <!-- Best Sellers -->
       <section id="bestsell" class="p-5 heightforAll">
         <div id="bestSellers" class="">
-          <div class="row mb-5">
+          <div class="row mb-5 g-2">
             <div class="h2 fw-bold">
               Checkout some of our best sellers!
               <span class="badge bg-danger">Hot!</span>
@@ -180,7 +177,7 @@
               eiusmod tempor incididunt ut labore
             </div>
           </div>
-          <div class="row d-flex justify-content-around">
+          <div class="row d-flex justify-content-around g-2">
             <div class="col-lg-3">
               <div class="card shadow-lg">
                 <img
@@ -195,7 +192,7 @@
                     additional content.
                   </p>
                   <a
-                    href="#"
+                    href="menu.html"
                     class="btn colorforButton d-flex justify-content-center"
                     >Order Now</a
                   >
@@ -216,7 +213,7 @@
                     additional content.
                   </p>
                   <a
-                    href="#"
+                    href="menu.html"
                     class="btn colorforButton d-flex justify-content-center"
                     >Order Now</a
                   >
@@ -237,7 +234,7 @@
                     additional content.
                   </p>
                   <a
-                    href="#"
+                    href="menu.html"
                     class="btn colorforButton d-flex justify-content-center"
                     >Order Now</a
                   >
@@ -287,7 +284,7 @@
                 <div class="col-md-4">
                   <img
                     src="./images/bundle3.png"
-                    class="img-fluid border border-secondary"
+                    class="img-fluid border border-warning"
                     alt="..."
                   />
                 </div>
@@ -326,7 +323,7 @@
                 <div class="col-md-4">
                   <img
                     src="./images/bundle2.png"
-                    class="img-fluid border border-secondary"
+                    class="img-fluid border border-warning"
                     alt="..."
                   />
                 </div>
@@ -360,7 +357,7 @@
                 <div class="col-md-4">
                   <img
                     src="./images/bundle1.png"
-                    class="img-fluid border border-secondary"
+                    class="img-fluid border border-warning"
                     alt="..."
                   />
                 </div>
@@ -487,7 +484,7 @@
       <section id="newsletter" class="m-5">
         <div class="row d-flex justify-content-center align-items-center rows">
           <div class="col-md-6">
-            <div class="card">
+            <div class="card border border-warning">
               <div class="text-center">
                 <img src="./images/logo for navbar.png" width="100" />
                 <span class="d-block mt-3 h4"
@@ -505,7 +502,7 @@
                       aria-describedby="button-addon2"
                     />
                     <button
-                      class="btn btn-success border-rad"
+                      class="btn border-rad colorforButton"
                       type="button"
                       id="button-addon2"
                     >
@@ -530,26 +527,30 @@
                 <p>Where your cravings of burgers and fries will be solve!</p>
               </div>
               <div class="col-md-6 col-lg-5 col-xl-6 mx-auto mb-4"></div>
-              <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 text-end">
+              <div
+                class="d-lg-block d-md-block d-none col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 text-end"
+              >
                 <h6 class="text-uppercase fw-bold mb-4">Menu</h6>
                 <p>
-                  <a href="#" class="text-reset text-decoration-none">
+                  <a href="menu.html" class="text-reset text-decoration-none">
                     Nuggets
                   </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset text-decoration-none">
+                  <a href="menu.html" class="text-reset text-decoration-none">
                     Burgers
                   </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset text-decoration-none">
+                  <a href="menu.html" class="text-reset text-decoration-none">
                     Fries
                   </a>
                 </p>
               </div>
 
-              <div class="col-md-2 col-lg-1 col-xl-1 mx-auto mb-4 text-center">
+              <div
+                class="d-lg-block d-md-block d-none col-md-2 col-lg-1 col-xl-1 mx-auto mb-4 text-center"
+              >
                 <h6 class="text-uppercase fw-bold mb-4">Community</h6>
                 <p>
                   <a href="#" class="text-reset text-decoration-none">
@@ -570,20 +571,31 @@
                   <a href="#" class="text-reset text-decoration-none"> Help </a>
                 </p>
               </div>
-              <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 text-start">
+              <div
+                class="d-lg-block d-md-block d-none col-md-1 col-lg-1 col-xl-1 mx-auto mb-4 text-start"
+              >
                 <h6 class="text-uppercase fw-bold mb-4">Company</h6>
                 <p>
-                  <a href="#" class="text-reset text-decoration-none">
+                  <a
+                    href="contactus.html"
+                    class="text-reset text-decoration-none"
+                  >
                     Contact us
                   </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset text-decoration-none">
+                  <a
+                    href="contactus.html"
+                    class="text-reset text-decoration-none"
+                  >
                     About Us
                   </a>
                 </p>
                 <p>
-                  <a href="#" class="text-reset text-decoration-none">
+                  <a
+                    href="contactus.html"
+                    class="text-reset text-decoration-none"
+                  >
                     History
                   </a>
                 </p>
@@ -600,7 +612,7 @@
           <!-- Left -->
           <div class="text-center p-4">
             © 2022 Copyright:
-            <a class="text-reset fw-bold" href="#">BurgerQueen.com</a>
+            <a class="text-reset fw-bold" href="Index.html">BurgerQueen.com</a>
           </div>
           <!-- Left -->
 

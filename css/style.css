@@ -23,6 +23,7 @@
     --ShadeofBrown: #882b28;
 }
 
+/* for bestseller buttons orange */
 .colorforButton {
     color: white !important;
     background-color: var(--ShadeofOrange) !important;
@@ -35,19 +36,29 @@
     color: var(--ShadeofBrown) !important;
 }
 
+/* for bestseller buttons orange */
+
+/* For the Partnership logos */
 .grayscaleImg img {
     filter: grayscale(100%);
+    transition: 0.4s;
 }
 
 .grayscaleImg:hover img {
     filter: grayscale(0%);
 }
 
+/* For the Partnership logos */
+
+/* Google maps embeded style */
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
 }
 
+/* Google maps embeded style */
+
+/* For coloring sections, navbar, and footer */
 .section-background {
     background-color: var(--ShadeofOrange);
 }
@@ -56,10 +67,13 @@
     background-color: var(--ShadeofBlue);
 }
 
-.fonticons a {
-    text-decoration: none;
+.nav-link.active {
+    color: var(--ShadeofOrange) !important;
 }
 
+/* For coloring sections, navbar, and footer */
+
+/* For the scroll snap whole landing page */
 .wholeSection {
     scroll-snap-type: y mandatory;
     max-height: 100vh;
@@ -71,24 +85,67 @@
     scroll-snap-align: start;
 }
 
-.buttonAdjuster {
-    margin-right: 100px;
-    margin-top: 50px;
-}
+/* For the scroll snap whole landing page */
 
-.buttonAdjuster button {
-    width: 250px;
-    color: white;
-    background-color: var(--Red);
-    border: 1px solid var(--Red);
-}
 
-.buttonAdjuster button:hover {
-    background-color: #ac1227;
-    border: 1px solid var(--Red);
-    color: white;
-}
+/* for the big button on carousel */
 
+/* for color white on the footer section */
 #footer a, #footer h6, div.text-center.p-4, .fonticons span, .fonticons i, #footer p {
     color: white !important;
+}
+
+.fonticons a {
+    text-decoration: none;
+}
+
+/* for color white on the footer section */
+
+/* manual responsiveness */
+@media screen and (min-width: 600px) {
+
+    /* for the big button on carousel */
+    .buttonAdjuster {
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+
+    .buttonAdjuster button {
+        width: 250px;
+        color: white;
+        background-color: var(--Red);
+        border: 1px solid var(--Red);
+    }
+
+    .buttonAdjuster button:hover {
+        background-color: #ac1227;
+        border: 1px solid var(--Red);
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* for the big button on carousel */
+    .buttonAdjuster {
+        margin-right: 0px;
+        margin-top: 50px;
+    }
+
+    .buttonAdjuster button {
+        width: 150px;
+        color: white;
+        background-color: var(--Red);
+        border: 1px solid var(--Red);
+    }
+
+    .buttonAdjuster button:hover {
+        background-color: #ac1227;
+        border: 1px solid var(--Red);
+        color: white;
+    }
+
+    iframe {
+        width: 387px;
+    }
 }
