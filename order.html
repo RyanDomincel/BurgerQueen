@@ -52,7 +52,7 @@
               <a class="nav-link text-white" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white">Contact Us</a>
+              <a class="nav-link text-white" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="order.html">My Cart</a>
@@ -170,6 +170,9 @@
                 src="./images/burger1.png"
                 alt="burger1"
                 style="width: 4.5rem"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Burger"
               />
               <div>
                 <i class="fa-solid fa-star"></i>
@@ -204,6 +207,9 @@
                 src="./images/chicken2.png"
                 alt="burger1"
                 style="width: 4rem"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Chickener"
               />
               <div>
                 <i class="fa-solid fa-star"></i>
@@ -236,6 +242,9 @@
                 src="./images/bundle3.png"
                 alt="burger1"
                 style="width: 4rem"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Bundlest"
               />
               <div>
                 <i class="fa-solid fa-star"></i>
@@ -272,6 +281,9 @@
                   src="./images/drinks.png"
                   alt="drinks"
                   style="width: 5rem"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="Softdrinks"
                 />
               </div>
               <div class="col">
@@ -359,6 +371,9 @@
                   src="./images/fries.png"
                   alt="drinks"
                   style="width: 5rem"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="right"
+                  title="Fries"
                 />
               </div>
               <div class="col">
@@ -577,6 +592,7 @@
         </div>
       </div>
     </div>
+
     <!-- Footer starts here -->
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Links  -->
@@ -637,26 +653,17 @@
             >
               <h6 class="text-uppercase fw-bold mb-4">Company</h6>
               <p>
-                <a
-                  href="contactus.html"
-                  class="text-reset text-decoration-none"
-                >
+                <a href="contact.html" class="text-reset text-decoration-none">
                   Contact us
                 </a>
               </p>
               <p>
-                <a
-                  href="contactus.html"
-                  class="text-reset text-decoration-none"
-                >
+                <a href="contact.html" class="text-reset text-decoration-none">
                   About Us
                 </a>
               </p>
               <p>
-                <a
-                  href="contactus.html"
-                  class="text-reset text-decoration-none"
-                >
+                <a href="contact.html" class="text-reset text-decoration-none">
                   History
                 </a>
               </p>
@@ -710,5 +717,13 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
   </body>
 </html>
